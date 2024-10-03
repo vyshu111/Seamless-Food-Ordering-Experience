@@ -1,123 +1,60 @@
-# Seamless-Food-Ordering-Experience
+# Food Ordering Platform
 
-Here's a README.md file template for your food ordering platform project. This template covers both backend and frontend aspects, detailing the functionalities, technologies used, installation steps, and API documentation.
-
-Food Ordering Platform
 Welcome to the Food Ordering Platform project! This repository aims to provide a robust backend and frontend solution for a seamless food ordering experience. The platform connects customers with a diverse array of restaurants, allowing for smooth order placement, real-time tracking, and secure payment processing.
 
-Table of Contents
-Features
-Technologies Used
-Project Structure
-Installation
-Running the Project
-API Documentation
-Frontend Overview
-Contributing
-License
-Features
-Backend
-Restaurant Registration: Restaurants can create profiles, upload menus, and specify operating hours.
-Customer Authentication: Secure customer registration and login functionality.
-Menu Browsing: Customers can view restaurant menus based on cuisine or location.
-Order Placement: Customers can place orders with selected restaurants and add items to their cart.
-Real-time Order Tracking: Customers and restaurants can track order status.
-Payment Integration: Secure payment processing with the Stripe API.
-Order History: Customers and restaurants can view their past order history.
-Review and Rating System: Customers can rate and review restaurants.
-User Profile Management: Customers can update their profiles, including contact information and delivery addresses.
-Frontend
-Restaurant Listing and Search: Users can filter restaurants based on cuisine, location, and rating.
-Interactive Menu Browsing: Browse menus, view item descriptions, and add items to the cart.
-Order Tracking Visualization: Display the order's progress in real-time.
-User Authentication: Registration, login, and account management flows.
-Dynamic Shopping Cart: Real-time cart management for adjusting quantities and checkout.
-Review and Rating Submission: Submit reviews and ratings for restaurants.
-Technologies Used
-Backend
-Node.js
-Express.js
-MongoDB with Mongoose
-JWT Authentication
-Bcrypt for secure password storage
-Stripe for payment processing
-Frontend
-React.js
-Redux for state management
-React Router for navigation
-Axios for API communication
-CSS Modules for styling
-Project Structure
-bash
-Copy code
-├── backend
-│   ├── config              # Environment variables and configuration files
-│   ├── controllers         # Request handling logic for each endpoint
-│   ├── middleware          # Middleware functions
-│   ├── models              # Mongoose models for data
-│   ├── routes              # API endpoints for each resource
-│   ├── utils               # Utility functions
-│   ├── .env                # Environment variables (not included in the repo)
-│   ├── server.js           # Entry point for backend server
-│   └── package.json        # Backend dependencies and scripts
-├── frontend
-│   ├── src                 # Source code for the frontend
-│   ├── public              # Public assets
-│   ├── package.json        # Frontend dependencies and scripts
-│   └── README.md           # Documentation for frontend setup
-├── README.md               # Project documentation (this file)
-└── .gitignore              # Files and directories to ignore in Git
-Installation
-Prerequisites
-Node.js
-MongoDB
-Stripe API Key
-Setup Instructions
-Clone the repository:
+## Table of Contents
 
-bash
-git clone https://github.com/your-username/food-ordering-platform.git
-cd food-ordering-platform
-Backend Installation:
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Project Structure](#project-structure)
+- [Installation](#installation)
+- [Running the Project](#running-the-project)
+- [API Documentation](#api-documentation)
+- [Frontend Overview](#frontend-overview)
+- [Contributing](#contributing)
+- [License](#license)
 
-bash
-cd backend
-npm install
-Frontend Installation:
+## Features
 
-bash
-cd ../frontend
-npm install
-Environment Variables: Create a .env file in the backend directory and add the following values:
+### Backend
+- **Restaurant Registration:** Restaurants can create profiles, upload menus, and specify operating hours.
+- **Customer Authentication:** Secure customer registration and login functionality.
+- **Menu Browsing:** Customers can view restaurant menus based on cuisine or location.
+- **Order Placement:** Customers can place orders with selected restaurants and add items to their cart.
+- **Real-time Order Tracking:** Customers and restaurants can track order status.
+- **Payment Integration:** Secure payment processing with the Stripe API.
+- **Order History:** Customers and restaurants can view their past order history.
+- **Review and Rating System:** Customers can rate and review restaurants.
+- **User Profile Management:** Customers can update their profiles, including contact information and delivery addresses.
 
-makefile
-NODE_ENV=development
-PORT=5000
-MONGO_URI=your-mongodb-uri
-JWT_SECRET=your-jwt-secret
-STRIPE_SECRET_KEY=your-stripe-secret-key
-Running the Project
-Running the Backend
-Navigate to the backend directory:
+### Frontend
+- **Restaurant Listing and Search:** Users can filter restaurants based on cuisine, location, and rating.
+- **Interactive Menu Browsing:** Browse menus, view item descriptions, and add items to the cart.
+- **Order Tracking Visualization:** Display the order's progress in real-time.
+- **User Authentication:** Registration, login, and account management flows.
+- **Dynamic Shopping Cart:** Real-time cart management for adjusting quantities and checkout.
+- **Review and Rating Submission:** Submit reviews and ratings for restaurants.
 
-bash
-cd backend
-Start the server in development mode:
+## Technologies Used
 
-bash
-npm run dev
-The backend server should be running at http://localhost:5000.
+### Backend
+- **Node.js**
+- **Express.js**
+- **MongoDB** with **Mongoose**
+- **JWT Authentication**
+- **Bcrypt** for secure password storage
+- **Stripe** for payment processing
 
-Running the Frontend
-Navigate to the frontend directory:
+### Frontend
+- **React.js**
+- **Redux** for state management
+- **React Router** for navigation
+- **Axios** for API communication
+- **CSS Modules** for styling
 
-bash
-cd ../frontend
-Start the React application:
+## Project Structure
 
-bash
-npm start
-The frontend should be running at http://localhost:3000.
+
 
 API Documentation
 User Routes
