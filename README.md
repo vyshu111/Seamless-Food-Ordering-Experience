@@ -52,11 +52,8 @@ Welcome to the Food Ordering Platform project! This repository aims to provide a
 - **Axios** for API communication
 - **CSS Modules** for styling
 
-## Project Structure
 
-
-
-API Documentation
+### API Documentation
 User Routes
 POST /api/auth/register: Register a new user.
 POST /api/auth/login: Log in an existing user.
